@@ -119,3 +119,6 @@ case $DBASH_COLOR_SCHEME in
   bright_term_colors
   ;;
 esac
+
+alias update_dbash="wget -O \"\$HOME/.dbash.sh\" 'https://raw.githubusercontent.com/MrRedacted/dbash/master/.dbash.sh'"
+alias uninstall_dbash="rm \"\$HOME/.dbash.sh\"; sed -i '/. \"\$HOME\/.dbash.sh\"/d' \"\$HOME/.bashrc\" 2>/dev/null; sed -i '/. \"\$HOME\/.dbash.sh\"/d' \"\$HOME/.bash_profile\" 2>/dev/null; sed -i '/. \"\$HOME\/.dbash.sh\"/d' \"\$HOME/.profile\" 2>/dev/null; echo 'Dbash has been uninstalled!'"
