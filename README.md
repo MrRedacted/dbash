@@ -1,5 +1,5 @@
 # dbash
-An improved Bash prompt to help alleviate the feeling of needing zsh or fish as your shell
+An improved and styled Bash prompt, because Bash is the way
 
 There are multiple icons and color schemes to choose from within the .dbash.sh file
 
