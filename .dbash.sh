@@ -32,7 +32,7 @@ function set_vars {
 
   ## CHANGE ICON AND COLOR SCHEME HERE
   ## set to an icon variable from above or a custom icon
-  DBASH_ICON=$radio
+  DBASH_ICON=$bash
   DBASH_COLOR_SCHEME='gruvbox'
 }
 
