@@ -10,11 +10,11 @@ wget -O "$HOME/.dbash.sh" 'https://raw.githubusercontent.com/MrRedacted/dbash/ma
 sourced_location="$HOME/.bashrc"
 
 if [ -f "$HOME/.bash_profile" ]; then
-  if ! grep -q '. "$HOME/.bashrc"' "$HOME/.bash_profile"; then
+  if (! grep -q '. "$HOME/.bashrc"' "$HOME/.bash_profile") && (! grep -q '. ~/.bashrc' "$HOME/.bash_profile"); then
     sourced_location="$HOME/.bash_profile"
   fi
 else
-  if ! grep -q '. "$HOME/.bashrc"' "$HOME/.profile"; then
+  if (! grep -q '. "$HOME/.bashrc"' "$HOME/.profile") && (! grep -q '. ~/.bashrc' "$HOME/.profile"); then
     sourced_location="$HOME/.profile"
   fi
 fi
